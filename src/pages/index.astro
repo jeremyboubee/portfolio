@@ -1,4 +1,5 @@
 ---
+import Home from "../components/Home.astro";
 import PortfolioLayout from "../layouts/PortfolioLayout.astro";
 import type { Props as Config } from "../layouts/PortfolioLayout.astro";
 
@@ -9,7 +10,5 @@ const config: Config = {
 ---
 
 <PortfolioLayout language={config.language} title={config.title}>
-  <h1>
-    Astro <span class="text-(--accent)">with colors</span>
-  </h1>
+  <Home />
 </PortfolioLayout>
