@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+:root {
+  --accent: rgba(20, 184, 166);
+  --black: rgba(16, 16, 16);
+  --white: rgba(223, 223, 223);
+}
