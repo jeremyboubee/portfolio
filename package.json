@@ -14,5 +14,10 @@
     "astro": "^5.14.7",
     "preact": "^10.27.2",
     "tailwindcss": "^4.1.15"
+  },
+  "devDependencies": {
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@svgr/plugin-svgo": "^8.1.0",
+    "vite-plugin-svgr": "^4.5.0"
   }
 }
