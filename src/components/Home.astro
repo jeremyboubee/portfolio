@@ -1,21 +1,52 @@
 ---
 import DropdownList from "../preact/DropdownList";
 import LetterGlitch from "../preact/LetterGlitch";
+
+import GithubIcon from "../images/github-mark.svg";
+import GmailIcon from "../images/gmail-mark.svg";
+import LinkedinIncon from "../images/linkedin-mark.svg";
 ---
 
 <section id="home" class="grid grid-cols-1 gap-5">
-  <div class="home-title">
+  <div id="home-title">
     <p class="text-(--soft-white) pl-1 mb-3">Hi &#128075, I'm Jérémy Boubée</p>
     <h1 class="text-5xl">Software Developer</h1>
   </div>
-  <p class="text-(--soft-white) text-md">
+
+  <p id="home-description" class="text-(--soft-white) text-md">
     Transforming ideas into interactive and seamless digital experiences with
     cutting-edge <span class="text-(--accent) shiny">frontend</span> development.
   </p>
-  <div id="about" class="flex flex-col gap-4">
+
+  <div id="home-socials" class="flex flex-row gap-2">
+    <a
+      href="https://github.com"
+      target="_blank"
+      class="border border-(--soft-white)/20 p-3 rounded-xl text-(--soft-white) bg-transparent hover:text-white hover:bg-(--soft-white)/5"
+    >
+      <GithubIcon fill="currentColor" width={32} />
+    </a>
+    <a
+      href="https://linkedin.com"
+      target="_blank"
+      class="border border-(--soft-white)/20 p-3 rounded-xl text-(--soft-white) bg-transparent hover:text-white hover:bg-(--soft-white)/5"
+    >
+      <LinkedinIncon fill="currentColor" width={32} />
+    </a>
+    <a
+      href="https://google.com"
+      target="_blank"
+      class="border border-(--soft-white)/20 p-3 rounded-xl text-(--soft-white) bg-transparent hover:text-white hover:bg-(--soft-white)/5"
+    >
+      <GmailIcon fill="currentColor" width={32} />
+    </a>
+  </div>
+
+  <div id="home-about" class="flex flex-col gap-4">
     <h2 class="text-3xl">About me</h2>
     <DropdownList client:load />
   </div>
+
   <LetterGlitch
     centerVignette={false}
     client:load
