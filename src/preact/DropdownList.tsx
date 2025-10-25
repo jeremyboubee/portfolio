@@ -19,7 +19,7 @@ const DropdownItem = ({
   return (
     <button
       type="button"
-      className="w-full border rounded-xl border-(--soft-white)/20 cursor-pointer bg-(--soft-white)/2"
+      className="w-full border rounded-xl border-(--soft-white)/20 cursor-pointer bg-(--soft-white)/5 text-white"
       onClick={onClick}
     >
       <div className="flex justify-between p-4">
@@ -55,7 +55,7 @@ const DropdownList = () => {
   };
 
   return (
-    <ul className="flex flex-col gap-4">
+    <ul className="flex flex-col gap-3">
       {Object.entries(dropdownItems).map(([category, content], dropindex) => (
         <Fragment key={`dropdown-${dropindex}`}>
           <li>
@@ -72,7 +72,7 @@ const DropdownList = () => {
             >
               <div
                 id={`dropdown-${dropindex}-content`}
-                className={`dropdown-content font-thin text-left flex flex-col gap-2 px-6 overflow-hidden transition-all duration-300 ${
+                className={`dropdown-content font-thin text-left flex flex-col gap-2 px-6 overflow-hidden transition-all duration-300 text-(--soft-white) ${
                   openDropdown === `dropdown-${dropindex}`
                     ? "opacity-100 pb-6"
                     : "max-h-0 opacity-0"
@@ -82,7 +82,15 @@ const DropdownList = () => {
                   <Fragment key={`dropdown-${dropindex}-item-${item_index}`}>
                     <div className="flex gap-3">
                       <span>•</span>
-                      <p className="">{item}</p>
+                      <p
+                        className={`transition-all duration-900 ${
+                          openDropdown === `dropdown-${dropindex}`
+                            ? "opacity-100"
+                            : "opacity-0"
+                        }`}
+                      >
+                        {item}
+                      </p>
                     </div>
                   </Fragment>
                 ))}
