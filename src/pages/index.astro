@@ -4,11 +4,11 @@ import PortfolioLayout from "../layouts/PortfolioLayout.astro";
 import type { Props as Config } from "../layouts/PortfolioLayout.astro";
 
 const config: Config = {
-  language: "fr",
+  lang: "fr",
   title: "wip",
 };
 ---
 
-<PortfolioLayout language={config.language} title={config.title}>
+<PortfolioLayout lang={config.lang} title={config.title}>
   <Home />
 </PortfolioLayout>

@@ -1,4 +1,5 @@
 ---
+import DropdownList from "../preact/DropdownList";
 import LetterGlitch from "../preact/LetterGlitch";
 ---
 
@@ -7,12 +8,13 @@ import LetterGlitch from "../preact/LetterGlitch";
     <p class="text-(--soft-white) pl-1 mb-3">Hi &#128075, I'm Jérémy Boubée</p>
     <h1 class="text-5xl">Software Developer</h1>
   </div>
-  <p class="text-(--soft-white) text-md pr-12">
+  <p class="text-(--soft-white) text-md">
     Transforming ideas into interactive and seamless digital experiences with
     cutting-edge <span class="text-(--accent) shiny">frontend</span> development.
   </p>
   <div id="about" class="flex flex-col gap-4">
     <h2 class="text-3xl">About me</h2>
+    <DropdownList client:load />
   </div>
   <LetterGlitch
     centerVignette={false}

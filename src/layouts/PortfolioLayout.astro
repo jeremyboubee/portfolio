@@ -1,16 +1,17 @@
 ---
 import "../styles/global.css";
+import type { HTMLAttributes } from "astro/types";
 
-export interface Props {
-  language?: string;
+export interface Props extends HTMLAttributes<"html"> {
+  lang?: string;
   title?: string;
 }
 
-const { language, title } = Astro.props;
+const { lang, title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang={language ?? "en"}>
+<html lang={lang ?? "en"}>
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
