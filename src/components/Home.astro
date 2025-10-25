@@ -7,57 +7,70 @@ import GmailIcon from "../images/gmail-mark.svg";
 import LinkedinIncon from "../images/linkedin-mark.svg";
 ---
 
-<section id="home" class="grid grid-cols-1 gap-5">
-  <div id="home-title">
-    <p class="text-(--soft-white) pl-1 mb-3">Hi &#128075, I'm Jérémy Boubée</p>
-    <h1 class="text-5xl">Software Developer</h1>
+<section id="home" class="flex flex-col justify-between h-screen p-8 gap-8">
+  <div class="grid
+  grid-cols-1
+  gap-5
+  md:grid-cols-2
+  md:py-12">
+    <div id="home-title" class="place-self-start">
+      <p class="text-(--soft-white) pl-1 mb-3">
+        Hi &#128075, I'm Jérémy Boubée
+      </p>
+      <h1 class="text-5xl md:text-7xl">Software Developer</h1>
+    </div>
+
+    <p
+      id="home-description"
+      class="text-(--soft-white) text-md md:text-2xl place-self-end"
+    >
+      Transforming ideas into interactive and seamless digital experiences with
+      cutting-edge <span class="text-(--accent) shiny">frontend</span> development.
+    </p>
+
+    <div id="home-socials" class="flex flex-row gap-2 md:pt-6">
+      <a
+        href="https://github.com"
+        target="_blank"
+        class="border border-(--soft-white)/20 p-3 md:p-5 rounded-xl text-(--soft-white) bg-transparent hover:text-white hover:bg-(--soft-white)/5"
+      >
+        <GithubIcon fill="currentColor" width={32} />
+      </a>
+      <a
+        href="https://linkedin.com"
+        target="_blank"
+        class="border border-(--soft-white)/20 p-3 md:p-5 rounded-xl text-(--soft-white) bg-transparent hover:text-white hover:bg-(--soft-white)/5"
+      >
+        <LinkedinIncon fill="currentColor" width={32} />
+      </a>
+      <a
+        href="https://google.com"
+        target="_blank"
+        class="border border-(--soft-white)/20 p-3 md:p-5 rounded-xl text-(--soft-white) bg-transparent hover:text-white hover:bg-(--soft-white)/5"
+      >
+        <GmailIcon fill="currentColor" width={32} />
+      </a>
+    </div>
   </div>
 
-  <p id="home-description" class="text-(--soft-white) text-md">
-    Transforming ideas into interactive and seamless digital experiences with
-    cutting-edge <span class="text-(--accent) shiny">frontend</span> development.
-  </p>
+  <div class="flex flex-col gap-4 md:flex-row md:gap-12 md:py-12">
+    <div id="home-about" class="flex flex-col gap-4 md:justify-between">
+      <h2 class="text-3xl md:text-5xl">About me</h2>
+      <DropdownList client:load />
+    </div>
 
-  <div id="home-socials" class="flex flex-row gap-2">
-    <a
-      href="https://github.com"
-      target="_blank"
-      class="border border-(--soft-white)/20 p-3 rounded-xl text-(--soft-white) bg-transparent hover:text-white hover:bg-(--soft-white)/5"
-    >
-      <GithubIcon fill="currentColor" width={32} />
-    </a>
-    <a
-      href="https://linkedin.com"
-      target="_blank"
-      class="border border-(--soft-white)/20 p-3 rounded-xl text-(--soft-white) bg-transparent hover:text-white hover:bg-(--soft-white)/5"
-    >
-      <LinkedinIncon fill="currentColor" width={32} />
-    </a>
-    <a
-      href="https://google.com"
-      target="_blank"
-      class="border border-(--soft-white)/20 p-3 rounded-xl text-(--soft-white) bg-transparent hover:text-white hover:bg-(--soft-white)/5"
-    >
-      <GmailIcon fill="currentColor" width={32} />
-    </a>
+    <LetterGlitch
+      centerVignette={false}
+      client:load
+      glitchColors={[
+        "rgba(20, 184, 166)",
+        "rgba(20, 184, 166, 0.5)",
+        "rgba(20, 184, 166, 0.2)",
+      ]}
+      glitchSpeed={33}
+      outerVignette={true}
+      smooth={true}
+      className="mt-2 flex-1 self-center max-h-[240px]"
+    />
   </div>
-
-  <div id="home-about" class="flex flex-col gap-4">
-    <h2 class="text-3xl">About me</h2>
-    <DropdownList client:load />
-  </div>
-
-  <LetterGlitch
-    centerVignette={false}
-    client:load
-    glitchColors={[
-      "rgba(20, 184, 166)",
-      "rgba(20, 184, 166, 0.5)",
-      "rgba(20, 184, 166, 0.2)",
-    ]}
-    glitchSpeed={33}
-    outerVignette={true}
-    smooth={true}
-    className="mt-2"
-  />
 </section>

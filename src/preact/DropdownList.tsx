@@ -22,7 +22,7 @@ const DropdownItem = ({
       className="w-full border rounded-xl border-(--soft-white)/20 cursor-pointer bg-(--soft-white)/5 text-white"
       onClick={onClick}
     >
-      <div className="flex justify-between p-4">
+      <div className="flex justify-between p-4 md:text-xl">
         <p className="font-normal">{title ?? "Dropdown title"}</p>
         {icon ?? <ChevronDownIcon fill="currentColor"></ChevronDownIcon>}
       </div>
