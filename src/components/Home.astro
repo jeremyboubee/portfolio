@@ -34,21 +34,21 @@ import LinkedinIncon from "../images/linkedin-mark.svg";
 
     <div id="home-socials" class="flex flex-row gap-2 md:pt-2">
       <a
-        href="https://github.com"
+        href="https://github.com/jeremyboubee"
         target="_blank"
         class="border border-(--soft-white)/20 p-3 md:p-5 rounded-xl text-(--soft-white) bg-transparent hover:text-white hover:bg-(--soft-white)/5"
       >
         <GithubIcon fill="currentColor" width={32} />
       </a>
       <a
-        href="https://linkedin.com"
+        href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-boubee-3a3905275/"
         target="_blank"
         class="border border-(--soft-white)/20 p-3 md:p-5 rounded-xl text-(--soft-white) bg-transparent hover:text-white hover:bg-(--soft-white)/5"
       >
         <LinkedinIncon fill="currentColor" width={32} />
       </a>
       <a
-        href="https://google.com"
+        href="mailto:jeremy.boubee@epitech.eu"
         target="_blank"
         class="border border-(--soft-white)/20 p-3 md:p-5 rounded-xl text-(--soft-white) bg-transparent hover:text-white hover:bg-(--soft-white)/5"
       >
@@ -66,7 +66,10 @@ import LinkedinIncon from "../images/linkedin-mark.svg";
       id="home-about"
       class="flex flex-col gap-4 md:justify-between sm:max-sm:px-24"
     >
-      <h2 class="text-3xl md:text-5xl mb-2">About me</h2>
+      <div>
+        <span class="text-(--accent) shiny">Skills</span>
+        <h2 class="text-3xl md:text-5xl mt-1 mb-2">About me</h2>
+      </div>
       <DropdownList client:load />
     </div>
 

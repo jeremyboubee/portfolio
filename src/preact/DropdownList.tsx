@@ -33,17 +33,16 @@ const DropdownItem = ({
 const DropdownList = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownItems: { [key: string]: string[] } = {
-    "Dropdown #1": [
-      "Lorem ipsum dolor sit",
-      "Amet consectetur, adipisicing elit rerum",
-      "Quis repellat ad atque sunt quod inventore",
+    "Web Development": [
+      "Build modern fullstack web application",
+      "Mobile first, responsive and SEO friendly",
+      "Using ecosystem approved tools like Typescript.",
     ],
-    "Dropdown #2": [
-      "Quis repellat ad atque sunt quod inventore",
-      "Amet consectetur, adipisicing elit rerum",
-      "Lorem ipsum dolor sit",
+    Multiplatform: [
+      "Mobile developement using Java",
+      "Mobile and desktop applications using Kotlin",
     ],
-    "Dropdown #3": [
+    DevOps: [
       "Quis repellat ad atque sunt quod inventore",
       "Lorem ipsum dolor sit",
       "Amet consectetur, adipisicing elit rerum",
