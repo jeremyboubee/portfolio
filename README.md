@@ -1,29 +1,48 @@
-# Astro Starter Kit: Minimal
+# Epitech T-ENT-500 Portfolio
+
+This project is powered by AstroJs.<br>
+You can check this one running at https://jeremyboubee.github.io/portfolio/<br>
+Otherwise clone the repo and check instructions below.
 
 ```sh
-npm create astro@latest -- --template minimal
+git clone git@github.com:EpitechMscProPromo2028/T-ENT-500-TLS_jeremy-boubee.git
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+./portfolio
+├── astro.config.mjs
+├── package.json
+├── package-lock.json
+├── public
+│   ├── assets
+│   │   ├── [...].svg
+│   └── favicon.svg
+├── README.md
+├── src
+│   ├── components
+│   │   ├── Contact.astro
+│   │   ├── Footer.astro
+│   │   ├── Home.astro
+│   │   ├── logo_slider.astro
+│   │   └── Projects.astro
+│   ├── files.d.ts
+│   ├── images
+│   │   ├── [...].svg
+│   ├── layouts
+│   │   └── PortfolioLayout.astro
+│   ├── pages
+│   │   └── index.astro
+│   ├── preact
+│   │   ├── DropdownList.tsx
+│   │   └── LetterGlitch.tsx
+│   └── styles
+│       └── global.css
+├── tailwind.config.ts
+└── tsconfig.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
@@ -37,7 +56,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
