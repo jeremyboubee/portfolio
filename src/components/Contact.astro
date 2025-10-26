@@ -18,20 +18,25 @@
       </p>
     </div>
     <div id="contact-form">
-      <form class="grid grid-cols-1 gap-2 text-thin text-(--soft-white)">
+      <form
+        action=""
+        class="grid grid-cols-1 gap-2 text-thin text-(--soft-white)"
+      >
         <input
+          required
           type="text"
           name="firstname"
           placeholder="Name"
-          class="border border-(--soft-white)/20 bg-(--soft-white)/2 rounded-md px-4 py-2"
+          class="border border-(--soft-white)/20 bg-(--soft-white)/2 rounded-md px-4 py-2 focus:outline focus:outline-(--accent)"
         />
         <label for="firstname"></label>
 
         <input
+          required
           type="email"
           name="email"
           placeholder="Email"
-          class="border border-(--soft-white)/20 bg-(--soft-white)/2 rounded-md px-4 py-2"
+          class="border border-(--soft-white)/20 bg-(--soft-white)/2 rounded-md px-4 py-2 focus:outline focus:outline-(--accent)"
         />
         <label for="email"></label>
 
@@ -40,12 +45,12 @@
           id="message"
           placeholder="Message"
           rows="8"
-          class="border border-(--soft-white)/20 bg-(--soft-white)/2 rounded-md p-4"
+          class="border border-(--soft-white)/20 bg-(--soft-white)/2 rounded-md p-4 focus:outline focus:outline-(--accent)"
         ></textarea>
         <label for="message"></label>
 
         <button
-          type="button"
+          type="submit"
           class="cursor-pointer border border-(--soft-white)/20 bg-(--soft-white)/2 hover:bg-(--soft-white)/10 rounded-md p-2"
           >Submit</button
         >
