@@ -1,16 +1,20 @@
 ---
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
+import Home from "../components/Home.astro";
+import PortfolioLayout from "../layouts/PortfolioLayout.astro";
+import Projects from "../components/Projects.astro";
+import type { Props as Config } from "../layouts/PortfolioLayout.astro";
 
+const config: Config = {
+  lang: "fr",
+  title: "wip",
+};
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<PortfolioLayout lang={config.lang} title={config.title}>
+  <Home />
+  <Projects />
+  <Contact />
+  <Footer />
+</PortfolioLayout>

@@ -1,0 +1,130 @@
+---
+import { Image } from "astro:assets";
+
+import CodeIcon from "../images/code.svg";
+import project1Image from "../images/fake_project1.png";
+---
+
+<section
+  id="projects"
+  class="flex flex-col justify-between px-8 sm:px-16 pb-16 gap-8 sm:max-sm:px-28"
+>
+  <div class="grid
+  grid-cols-1
+  gap-8">
+    <div id="projects-title">
+      <span class="text-(--accent) shiny">My work</span>
+      <h2 class="text-3xl md:text-5xl mt-1 mb-2 md:mb-8">Projects</h2>
+    </div>
+    <div id="projects-content" class="grid md:grid-cols-2 gap-8 sm:px-8">
+      <div class="project-card">
+        <div
+          class="project-card-header rounded-2xl bg-(--soft-white)/10 mb-2 p-8 sm:p-14"
+        >
+          <Image
+            src={project1Image}
+            alt="Project1 thumbnail"
+            class="rounded-xl cursor-pointer transition-all duration-300 hover:scale-115"
+          />
+        </div>
+        <div class="project-card-footer p-4 flex justify-between">
+          <div>
+            <h3 class="text-xl">My Project 1</h3>
+            <span class="text-(--soft-white)/75 font-normal text-sm"
+              >Status</span
+            >
+          </div>
+          <a
+            href="https://www.github.com"
+            target="_blank"
+            class="self-center border p-1 rounded-xl border-(--soft-white)/20 bg-transparent hover:bg-(--soft-white)/5 hover:text-white"
+          >
+            <CodeIcon width={32} height={32} />
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div
+          class="project-card-header rounded-2xl bg-(--soft-white)/10 mb-2 p-8 sm:p-14"
+        >
+          <Image
+            src={project1Image}
+            alt="Project1 thumbnail"
+            class="rounded-xl cursor-pointer transition-all duration-300 hover:scale-115"
+          />
+        </div>
+
+        <div class="project-card-footer p-4 flex justify-between">
+          <div>
+            <h3 class="text-xl">My Project 2</h3>
+            <span class="text-(--soft-white)/75 font-normal text-sm"
+              >Status</span
+            >
+          </div>
+          <a
+            href="https://www.github.com"
+            target="_blank"
+            class="self-center border p-1 rounded-xl border-(--soft-white)/20 bg-transparent hover:bg-(--soft-white)/5 hover:text-white"
+          >
+            <CodeIcon width={32} height={32} />
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div
+          class="project-card-header rounded-2xl bg-(--soft-white)/10 mb-2 p-8 sm:p-14"
+        >
+          <Image
+            src={project1Image}
+            alt="Project1 thumbnail"
+            class="rounded-xl cursor-pointer transition-all duration-300 hover:scale-115"
+          />
+        </div>
+        <div class="project-card-footer p-4 flex justify-between">
+          <div>
+            <h3 class="text-xl">My Project 3</h3>
+            <span class="text-(--soft-white)/75 font-normal text-sm"
+              >Status</span
+            >
+          </div>
+          <a
+            href="https://www.github.com"
+            target="_blank"
+            class="self-center border p-1 rounded-xl border-(--soft-white)/20 bg-transparent hover:bg-(--soft-white)/5 hover:text-white"
+          >
+            <CodeIcon width={32} height={32} />
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div
+          class="project-card-header rounded-2xl bg-(--soft-white)/10 mb-2 p-8 sm:p-14"
+        >
+          <Image
+            src={project1Image}
+            alt="Project1 thumbnail"
+            class="rounded-xl cursor-pointer transition-all duration-300 hover:scale-115"
+          />
+        </div>
+        <div class="project-card-footer p-4 flex justify-between">
+          <div>
+            <h3 class="text-xl">My Project 4</h3>
+            <span class="text-(--soft-white)/75 font-normal text-sm"
+              >Status</span
+            >
+          </div>
+          <a
+            href="https://www.github.com"
+            target="_blank"
+            class="self-center border p-1 rounded-xl border-(--soft-white)/20 bg-transparent hover:bg-(--soft-white)/5 hover:text-white"
+          >
+            <CodeIcon width={32} height={32} />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
