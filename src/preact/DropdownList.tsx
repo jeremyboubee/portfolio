@@ -36,16 +36,15 @@ const DropdownList = () => {
     "Web Development": [
       "Build modern fullstack web application",
       "Mobile first, responsive and SEO friendly",
-      "Using ecosystem approved tools like Typescript.",
+      "Using ecosystem approved tools like Typescript",
     ],
     Multiplatform: [
       "Mobile developement using Java",
       "Mobile and desktop applications using Kotlin",
     ],
     DevOps: [
-      "Quis repellat ad atque sunt quod inventore",
-      "Lorem ipsum dolor sit",
-      "Amet consectetur, adipisicing elit rerum",
+      "CI/CD & Kubernetes ensuring uptime and client experience",
+      "Managed on premise proxmox infrastructurei optimizing costs",
     ],
   };
 
